@@ -1,0 +1,1 @@
+select LEFT(CAST(shipment_date AS VARCHAR),7) AS year_month, Count(*) as count from amazon_shipment group by LEFT(CAST(shipment_date AS VARCHAR),7)  order by count asc

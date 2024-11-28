@@ -1,0 +1,2 @@
+select distinct location,sum(popularity) over(partition by location order by location ) / count(location) over(partition by location order by location )  AS avg_popularity from facebook_employees r  join facebook_hack_survey s
+on r.id=s.employee_id order by avg_popularity asc;
