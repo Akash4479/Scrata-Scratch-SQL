@@ -1,2 +1,2 @@
 # Scrata-Scratch-SQL
-SQL Questions
+SQL Questions from Scrata-Scratch
